@@ -7,3 +7,10 @@
 //
 
 #include "DataNode.h"
+
+string DataNode :: getnodeData()
+{
+    return nodeData;
+}//end of getnodeData method
+
+string DataNode :: setnodeData)
