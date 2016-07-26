@@ -8,9 +8,54 @@
 
 #include "DataNode.h"
 
-string DataNode :: getnodeData()
+template <class Type>
+DataNode<Type> :: DataNode()
+{
+    this ->nodePointer = nullptr;//or NULL
+    this ->nodeData =
+    
+}
+
+template <class Type>
+DataNode<Type> :: DataNode(Type nodeData)
+{
+    this->nodeData = nodeData;
+    this->nodePonter = nullptr;
+}
+
+//end of constructors
+
+template <class Type>
+Type DataNode<Type> :: getNodeData()
 {
     return nodeData;
-}//end of getnodeData method
+}//end of getter
 
-string DataNode :: setnodeData)
+template <class Type>
+DataNode<Type>* DataNode<Type> :: getNodePointer()
+{
+    return nodePointer;
+}//end of getter
+
+template <class Type>
+void DataNode<Type> :: setnodeData(Type nD)
+{
+    this->nodeData = nodeData;
+}
+
+template <class Type>
+void DataNode<Type> :: setnodePointer(DataNode<Type>* nodePointer)
+{
+    this ->nodePointer = nodePointer;
+}
+
+
+
+//My guess:
+//void DataNode :: getnodeData()
+//{
+//    return nodeData;
+//}//end of getnodeData method
+//
+//void DataNode :: setnodeData)
+
