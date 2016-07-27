@@ -38,13 +38,13 @@ DataNode<Type>* DataNode<Type> :: getNodePointer()
 }//end of getter
 
 template <class Type>
-void DataNode<Type> :: setnodeData(Type nD)
+void DataNode<Type> :: setNodeData(Type nodeData)
 {
     this->nodeData = nodeData;
 }
 
 template <class Type>
-void DataNode<Type> :: setnodePointer(DataNode<Type>* nodePointer)
+void DataNode<Type> :: setNodePointer(DataNode<Type>* nodePointer)
 {
     this ->nodePointer = nodePointer;
 }

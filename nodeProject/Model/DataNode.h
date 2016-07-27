@@ -1,5 +1,5 @@
 //
-//  DataNode.hpp
+//  DataNode.h
 //  nodeProject
 //
 //  Created by Henrichsen, Cody on 7/26/16.
@@ -24,8 +24,8 @@ public:
     DataNode(Type nodeData);
     //end of constructors
     
-    void setnodeData(Type nodeData);
-    void setnodePointer(DataNode * nodePointer);
+    void setNodeData(Type nodeData);
+    void setNodePointer(DataNode * nodePointer);
     //end of setters
     
     Type getNodeData();
