@@ -59,7 +59,11 @@ template <class Type>
 void SummerList<Type> :: add(Type data)
 {
     DataNode<Type> *newNode = new DataNode<Type>(data);
-    
+    if(size == 0 )
+    {
+        front = newNode;
+        end = newNode;
+    }
     end->setNodePointer(newNode);
     end = newNode;
 }
