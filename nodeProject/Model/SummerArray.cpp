@@ -74,3 +74,18 @@ Type SummerArray<Type> :: getLast()
     return end->getNodeData();
 }//end method getFirst
 
+
+template <class Type>
+void SummerArray<Type> :: setAtIndex(int index, Type data)//go to an index and replace it with what is being supplied- destroys existing data
+{
+    assert(index>= 0 && index < length);
+    
+    DataNode<Type> *indexPointer = front;
+    
+    for (int position = 0; position < index; position ++)
+    {
+        indexPointer = indexPointer->getNodePointer();
+    }//end of for loop
+    
+    indexPointer->setNodeData(data);
+}//end of setAtIndex method
