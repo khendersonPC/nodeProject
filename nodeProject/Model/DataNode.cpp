@@ -12,7 +12,7 @@ template <class Type>
 DataNode<Type> :: DataNode()
 {
     this ->nodePointer = nullptr;//or NULL
-    this ->nodeData =
+    
     
 }
 

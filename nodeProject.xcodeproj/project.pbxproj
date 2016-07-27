@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A4862EA41D47FDFD0074E651 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4862EA31D47FDFD0074E651 /* main.cpp */; };
 		A4862EAC1D47FF8C0074E651 /* DataNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4862EAA1D47FF8C0074E651 /* DataNode.cpp */; };
+		A4F809E21D49085F00B91B34 /* SummerArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4F809E01D49085F00B91B34 /* SummerArray.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		A4862EA31D47FDFD0074E651 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		A4862EAA1D47FF8C0074E651 /* DataNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DataNode.cpp; path = Model/DataNode.cpp; sourceTree = "<group>"; };
 		A4862EAB1D47FF8C0074E651 /* DataNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataNode.h; path = Model/DataNode.h; sourceTree = "<group>"; };
+		A4F809E01D49085F00B91B34 /* SummerArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SummerArray.cpp; path = Model/SummerArray.cpp; sourceTree = "<group>"; };
+		A4F809E11D49085F00B91B34 /* SummerArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SummerArray.h; path = Model/SummerArray.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +74,8 @@
 			children = (
 				A4862EAA1D47FF8C0074E651 /* DataNode.cpp */,
 				A4862EAB1D47FF8C0074E651 /* DataNode.h */,
+				A4F809E01D49085F00B91B34 /* SummerArray.cpp */,
+				A4F809E11D49085F00B91B34 /* SummerArray.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -131,6 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4F809E21D49085F00B91B34 /* SummerArray.cpp in Sources */,
 				A4862EA41D47FDFD0074E651 /* main.cpp in Sources */,
 				A4862EAC1D47FF8C0074E651 /* DataNode.cpp in Sources */,
 			);
@@ -251,6 +257,7 @@
 				A4862EA91D47FDFD0074E651 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
