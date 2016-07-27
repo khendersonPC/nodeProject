@@ -23,7 +23,7 @@ private: //instance variables
 public:
     SummerList();//constructor- doesnt have return type
 
-    Type getFromIndex(int index);
+    Type getFromIndex(int index);//Type means whatever is in the template
     Type getFirst();
     Type getLast();
     Type setAtIndex(int index, Type data);
