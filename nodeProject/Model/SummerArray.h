@@ -14,12 +14,24 @@
 template <class Type>
 class SummerArray
 {
-private:
+private: //instance variables
     int length;
     bool *modifiedNodes;//* is a pointer
-    DataNode <Type> front;
-    DataNode<Type> end;
+    DataNode <Type> *front;
+    DataNode<Type> *end;
     
+public:
+    SummerArray(int length);//constructor- doesnt have return type
+    
+    Type getFromIndex(int index);
+    Type getFirst();
+    Type getLast();
+    
+    void setAtIndex(int index, Type data);
+    
+    void sort();
+    void resize(int newSize);
+    int getUnusedNodes();
     
 };
 
