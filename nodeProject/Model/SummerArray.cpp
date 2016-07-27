@@ -37,5 +37,5 @@ SummerArray<Type> :: SummerArray(int length)
         modifiedNodes[index] = false;
     }
 }
-
+//the codabove is the same as a single line startment.
 

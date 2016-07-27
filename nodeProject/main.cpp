@@ -7,9 +7,15 @@
 //
 
 #include <iostream>
+#include "NodeController.hpp"
 
-int main() {
-
+int main()
+{
+    std::cout <<"Starting NodeController" <<std::endl;
+    NodeController * app = new NodeController();
+    app->start();
+    std::cout << "ending nodecontroller" << std::endl;
+    
     
     return 0;
 }
