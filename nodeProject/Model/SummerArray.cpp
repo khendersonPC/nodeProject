@@ -37,5 +37,40 @@ SummerArray<Type> :: SummerArray(int length)
         modifiedNodes[index] = false;
     }
 }
-//the codabove is the same as a single line startment.
+
+template <class Type>
+//writing a method below
+Type SummerArray<Type> :: getFromIndex(int index) //retrieve what is at an index
+{
+    //when there is a return type- declare an instance of a return type1
+    assert(index>= 0);
+    assert(index < length);
+    //assert basically makes the program die if it doesn't meant the parameters
+    
+   
+    
+    Type retrievedValue;
+    
+    DataNode<Type> *indexPointer = front;
+    for(int position = 0; position < index; position++)
+    {
+        indexPointer =  indexPointer->getNodePointer(); //-> is the same as . dot method
+    }
+    
+    retrievedValue = indexPointer->getNodeData();
+    
+    return retrievedValue;
+}//end method getFromIndex
+
+template <class Type>
+Type SummerArray<Type> :: getFirst()
+{
+    return front->getNodeData();
+}//end method getFirst
+
+template <class Type>
+Type SummerArray<Type> :: getLast()
+{
+    return end->getNodeData();
+}//end method getFirst
 
