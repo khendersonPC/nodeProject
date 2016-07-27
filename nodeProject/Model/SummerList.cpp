@@ -32,10 +32,12 @@ void SummerList<Type> :: addAtIndex(int index, Type data)
     if(index == 0)
     {
         addAtFront(data);
+ 
     }
     else if(index == size - 1)
     {
         add(data);
+
     }
     else
     {
@@ -51,6 +53,8 @@ void SummerList<Type> :: addAtIndex(int index, Type data)
         
         indexPointer->setNodePointer(newNode);
         //setting indexPointer to point to newNode address
+        
+        size++;
   
     }
 }
@@ -69,7 +73,7 @@ void SummerList<Type> :: add(Type data)
         end->setNodePointer(newNode);
         end = newNode;
     }
-    
+    size++;
 }
 
 template <class Type>
@@ -89,6 +93,7 @@ void SummerList<Type> :: addAtFront(Type data)
         front = newNode;
 
     }
+    size++;
 }
 
 template <class Type>
@@ -139,7 +144,7 @@ Type SummerList<Type> :: remove(int index)
         
         delete removedNode;
     }
-    
+    size--;
     
     return removedValue;
 }
