@@ -74,6 +74,12 @@ Type SummerArray<Type> :: getLast()
     return end->getNodeData();
 }//end method getFirst
 
+template <class Type>
+int SummerArray<Type> :: getLength()
+{
+    //instead of *nameOfArray/sizeof(type)
+    return this->length;
+}//end of getLength method
 
 template <class Type>
 void SummerArray<Type> :: setAtIndex(int index, Type data)//go to an index and replace it with what is being supplied- destroys existing data
@@ -89,3 +95,5 @@ void SummerArray<Type> :: setAtIndex(int index, Type data)//go to an index and r
     
     indexPointer->setNodeData(data);
 }//end of setAtIndex method
+
+

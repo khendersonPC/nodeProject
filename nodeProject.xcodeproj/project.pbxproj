@@ -11,6 +11,7 @@
 		A4862EAC1D47FF8C0074E651 /* DataNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4862EAA1D47FF8C0074E651 /* DataNode.cpp */; };
 		A4F809E21D49085F00B91B34 /* SummerArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4F809E01D49085F00B91B34 /* SummerArray.cpp */; };
 		A4F809E51D491B1D00B91B34 /* NodeController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4F809E31D491B1D00B91B34 /* NodeController.cpp */; };
+		A4F809E91D4944AB00B91B34 /* SummerList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4F809E71D4944AB00B91B34 /* SummerList.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		A4F809E11D49085F00B91B34 /* SummerArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SummerArray.h; path = Model/SummerArray.h; sourceTree = "<group>"; };
 		A4F809E31D491B1D00B91B34 /* NodeController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NodeController.cpp; sourceTree = "<group>"; };
 		A4F809E41D491B1D00B91B34 /* NodeController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NodeController.hpp; sourceTree = "<group>"; };
+		A4F809E71D4944AB00B91B34 /* SummerList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SummerList.cpp; path = Model/SummerList.cpp; sourceTree = "<group>"; };
+		A4F809E81D4944AB00B91B34 /* SummerList.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = SummerList.hpp; path = Model/SummerList.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,8 @@
 				A4862EAB1D47FF8C0074E651 /* DataNode.h */,
 				A4F809E01D49085F00B91B34 /* SummerArray.cpp */,
 				A4F809E11D49085F00B91B34 /* SummerArray.h */,
+				A4F809E71D4944AB00B91B34 /* SummerList.cpp */,
+				A4F809E81D4944AB00B91B34 /* SummerList.hpp */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -152,6 +157,7 @@
 				A4F809E21D49085F00B91B34 /* SummerArray.cpp in Sources */,
 				A4F809E51D491B1D00B91B34 /* NodeController.cpp in Sources */,
 				A4862EA41D47FDFD0074E651 /* main.cpp in Sources */,
+				A4F809E91D4944AB00B91B34 /* SummerList.cpp in Sources */,
 				A4862EAC1D47FF8C0074E651 /* DataNode.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
