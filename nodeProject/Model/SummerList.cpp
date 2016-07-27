@@ -64,6 +64,10 @@ void SummerList<Type> :: add(Type data)
         front = newNode;
         end = newNode;
     }
-    end->setNodePointer(newNode);
-    end = newNode;
+    else
+    {
+        end->setNodePointer(newNode);
+        end = newNode;
+    }
+    
 }
