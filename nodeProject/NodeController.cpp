@@ -33,8 +33,10 @@ void NodeController :: tryTree()
     BinaryTree<int> sampleTree;
     sampleTree.insert(7);
     sampleTree.insert(5);
+    cout <<"Using the calculate size. . ." <<sampleTree.getSize() <<endl;
     sampleTree.insert(213);
     sampleTree.insert(-123);
+    sampleTree.insert(978098);
     sampleTree.insert(5);
     sampleTree.insert(0);
     sampleTree.insert(235432);
@@ -52,6 +54,10 @@ void NodeController :: tryTree()
     cout << endl;
     
     cout <<"HOORAY!" <<endl;
+    
+    cout <<"Using the calculate size. . ." <<endl;
+    cout <<sampleTree.getSize();
+    cout << endl;
     
 }
 
