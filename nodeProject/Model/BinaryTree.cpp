@@ -22,25 +22,28 @@ void BinaryTree<Type> :: insert(Type data)
     BinaryTreeNode<Type> *insertedNode = new BinaryTreeNode<Type>(data);
     //created a new node pointer called insertedNode that is the Binary Tree Node Type.
     
-    insert(insertedNode, root);//calling the same method within the method until it stops
+    root = insert(insertedNode, root);//calling the same method within the method until it stops
+    
 }//This is recursion - IEEEEEKK!
 
 
 template <class Type>
-void BinaryTree<Type> :: insert(BinaryTreeNode<Type> *insertedNode, BinaryTreeNode<Type> *currentRootNode)
+BinaryTreeNode<Type> *BinaryTree<Type> :: insert(BinaryTreeNode<Type> *insertedNode, BinaryTreeNode<Type> *currentRootNode)
 {
     if(currentRootNode == nullptr)
     {
-        currentRootNode = insertedNode;
+        return insertedNode;
     }
     else if(insertedNode->getNodeData() < currentRootNode->getNodeData())
     {
-        insert(insertedNode, currentRootNode->getLeftChild());
+        currentRootNode->setLeftChild(insert(insertedNode, currentRootNode->getLeftChild()));
     }
     else if(insertedNode->getNodeData() > currentRootNode->getNodeData())
     {
-        insert(insertedNode, currentRootNode->getRighttChild());
+        currentRootNode->setRightChild(insert(insertedNode, currentRootNode->getRightChild()));
     }
+    
+    return currentRootNode;
     
 }
 
@@ -81,4 +84,10 @@ void BinaryTree<Type> :: postOrderTraversal(BinaryTreeNode<Type>*currentNode)
         std::cout << currentNode->getNodeData() << ", ";
         
     }
+}
+
+template <class Type>
+BinaryTreeNode<Type> *BinaryTree<Type> :: getRoot()
+{
+    return root;
 }

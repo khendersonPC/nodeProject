@@ -8,7 +8,7 @@
 
 #ifndef NodeController_hpp
 #define NodeController_hpp
-#
+
 #include <stdio.h>
 
 class NodeController
@@ -16,6 +16,7 @@ class NodeController
 private:
     void tryNodes();
     void tryArray();
+    void tryTree();
 
 public:
     void start();

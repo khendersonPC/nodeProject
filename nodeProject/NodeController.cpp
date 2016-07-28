@@ -11,11 +11,13 @@
 #include "Model/SummerArray.cpp"
 #include <string>
 #include <iostream>
+#include "Model/BinaryTree.cpp"
 
 using namespace std;
 
 void NodeController :: tryNodes()
 {
+    DataNode<int> numberNode;
     
 }
 
@@ -23,9 +25,37 @@ void NodeController :: tryArray()
 {
     SummerArray<int> testArray(3);
     //int derpy[3]; //same as the code we wrote above
+    //cout << derpy
+}
+
+void NodeController :: tryTree()
+{
+    BinaryTree<int> sampleTree;
+    sampleTree.insert(7);
+    sampleTree.insert(5);
+    sampleTree.insert(213);
+    sampleTree.insert(-123);
+    sampleTree.insert(5);
+    sampleTree.insert(0);
+    sampleTree.insert(235432);
+    
+    cout <<"The in order traversal" << endl;
+    sampleTree.inOrderTraversal(sampleTree.getRoot());
+    cout << endl;
+    
+    cout <<"The pre order traversal" << endl;
+    sampleTree.preOrderTraversal(sampleTree.getRoot());
+    cout << endl;
+    
+    cout <<"The post order traversal" << endl;
+    sampleTree.postOrderTraversal(sampleTree.getRoot());
+    cout << endl;
+    
+    cout <<"HOORAY!" <<endl;
+    
 }
 
 void NodeController :: start()
 {
-    tryArray();
+    tryTree();
 }
