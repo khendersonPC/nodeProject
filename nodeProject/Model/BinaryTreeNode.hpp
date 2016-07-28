@@ -26,7 +26,7 @@ public:
     BinaryTreeNode(Type data);
     
     BinaryTreeNode<Type> *getLeftChild();
-    BinaryTreeNode<Type> *getRighttChild();
+    BinaryTreeNode<Type> *getRightChild();
     BinaryTreeNode<Type> *getParent();
     
     void setRightChild(BinaryTreeNode<Type> *rightChild);

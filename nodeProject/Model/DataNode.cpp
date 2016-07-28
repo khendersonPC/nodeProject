@@ -20,7 +20,7 @@ template <class Type>
 DataNode<Type> :: DataNode(Type nodeData)
 {
     this->nodeData = nodeData;
-    this->nodePonter = nullptr;
+    this->nodePointer = nullptr;
 }
 
 //end of constructors
@@ -31,11 +31,16 @@ Type DataNode<Type> :: getNodeData()
     return nodeData;
 }//end of getter
 
+
+
 template <class Type>
 DataNode<Type>* DataNode<Type> :: getNodePointer()
 {
     return nodePointer;
 }//end of getter
+
+
+
 
 template <class Type>
 void DataNode<Type> :: setNodeData(Type nodeData)
