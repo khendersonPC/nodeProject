@@ -7,3 +7,37 @@
 //
 
 #include "BinaryTree.hpp"
+
+template <class Type>
+BinaryTree<Type> :: BinaryTree()
+{
+    root = nullptr;
+}
+
+template <class Type>
+void BinaryTree<Type> :: insert(Type data)
+{
+    BinaryTreeNode<Type> *insertedNode = new BinaryTreeNode<Type>(data);
+    //created a new node pointer called insertedNode that is the Binary Tree Node Type.
+    
+    insert(insertedNode, root);//calling the same method within the method until it stops
+}//This is recursion - IEEEEEKK!
+
+
+template <class Type>
+void BinaryTree<Type> :: insert(BinaryTreeNode<Type> *insertedNode, BinaryTreeNode<Type> *currentRootNode)
+{
+    if(currentRootNode == nullptr)
+    {
+        currentRootNode = insertedNode;
+    }
+    else if(insertedNode->getNodeData() < currentRootNode->getNodeData())
+    {
+        insert(insertedNode, currentRootNode->getLeftChild());
+    }
+    else if(insertedNode->getNodeData() > currentRootNode->getNodeData())
+    {
+        insert(insertedNode, currentRootNode->getRighttChild());
+    }
+    
+}

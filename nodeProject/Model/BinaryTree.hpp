@@ -18,6 +18,7 @@ class BinaryTree
     
 private:
     BinaryTreeNode<Type> *root;
+    void insert(BinaryTreeNode<Type> *insertedNode, BinaryTreeNode<Type> *currentRootNode);
     
 public:
     BinaryTree();
