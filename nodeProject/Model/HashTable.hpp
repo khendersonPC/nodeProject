@@ -32,6 +32,8 @@ public:
     HashTable();
     void add(Type data);
     bool remove(Type data);
+    void displayContents();
+    
     };
 
 #endif /* HashTable_hpp */

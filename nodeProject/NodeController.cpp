@@ -9,6 +9,7 @@
 #include "NodeController.hpp"
 #include "Model/DataNode.cpp"
 #include "Model/SummerArray.cpp"
+#include "Model/HashTable.cpp"
 #include <string>
 #include <iostream>
 #include "Model/BinaryTree.cpp"
@@ -61,7 +62,30 @@ void NodeController :: tryTree()
     
 }
 
+void NodeController :: tryHash()
+{
+    HashTable<int> numbersInHash;
+    numbersInHash.add(342);
+    numbersInHash.add(343);
+    numbersInHash.add(5);
+    numbersInHash.add(-3422);
+    numbersInHash.add(34908);
+    
+    cout <<"here they are" << endl;
+    numbersInHash.displayContents();
+    cout << endl;
+    
+    HashTable<string> stringsInHash;
+    stringsInHash.add("yo ho ho");
+    stringsInHash.add(" ;) ");
+
+    cout <<"second table" << endl;
+    stringsInHash.displayContents();
+    cout << endl;
+    
+}
+
 void NodeController :: start()
 {
-    tryTree();
+    tryHash();
 }

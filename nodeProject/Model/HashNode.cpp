@@ -39,7 +39,7 @@ bool HashNode<Type> :: hasStuffed()
 template<class Type>
 HashNode<Type>* HashNode<Type> :: getNode()
 {
-    return nextNode();
+    return nextNode;
 }
 
 template<class Type>
@@ -52,4 +52,10 @@ template<class Type>
 void HashNode<Type> :: setStuffed(bool isStuffed)
 {
     this->isStuffed = isStuffed;
+}
+
+template<class Type>
+void HashNode<Type> :: setData(Type data)
+{
+    this->data = data;
 }
