@@ -47,7 +47,7 @@ void HashTable<Type> :: add(Type data)
     
     HashNode<Type> *indexPointer = front;
     
-    for(int index = 0; index < position; index++)
+    for(long index = 0; index < position; index++)
     {
         indexPointer = indexPointer->getNode();
     }
@@ -57,3 +57,25 @@ void HashTable<Type> :: add(Type data)
     
 }
 
+template<class Type>
+long HashTable<Type> :: findPosition(Type data)
+{
+    long insertedPosition;
+    
+    unsigned long address = &data;
+    
+    insertedPosition = address % capacity;
+    HashNode<Type>* indexPointer = front;
+    
+    for (long index = 0; index < insertedPosition; index++ )
+    {
+        indexPointer = indexPointer->getNode();
+    }
+    
+    if (indexPointer->isStuffed())
+    {
+        insertedPosition = handleCollision(data);
+    }
+    
+    return insertedPosition;
+}
