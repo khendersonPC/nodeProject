@@ -1,0 +1,33 @@
+//
+//  HashNode.hpp
+//  nodeProject
+//
+//  Created by Henrichsen, Cody on 7/29/16.
+//  Copyright © 2016 CTEC. All rights reserved.
+//
+
+#ifndef HashNode_hpp
+#define HashNode_hpp
+
+#include <stdio.h>
+
+#endif /* HashNode_hpp */
+
+template <class Type>
+class HashNode
+{
+private:
+    Type data;
+    bool isStoring;
+    HashNode<Type>* nextNode;
+public:
+    HashNode();
+    HashNode(Type data);
+    Type getData();
+    bool hasStuff();
+    HashNode<Type>* getNode();
+    
+    void setData(Type data);
+    void setNode(HashNode<Type> *nextNode);
+    void setStuffed(bool isStoring);
+};
