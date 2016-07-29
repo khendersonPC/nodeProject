@@ -2,7 +2,7 @@
 //  HashTable.cpp
 //  nodeProject
 //
-//  Created by Henrichsen, Cody on 7/29/16.
+//  Created by Henderson, Kelly on 7/29/16.
 //  Copyright © 2016 CTEC. All rights reserved.
 //
 
@@ -10,7 +10,6 @@
 
 
 template<class Type>
-
 HashTable<Type> :: HashTable()
 {
     
@@ -36,5 +35,25 @@ HashTable<Type> :: HashTable()
 }
 
 
-
+template<class Type>
+void HashTable<Type> :: add(Type data)
+{
+    if(((double)size/(double)capacity) >= efficiencyPercentage)
+    {
+        resize();
+    }
+    
+    long position = findPosition(data);
+    
+    HashNode<Type> *indexPointer = front;
+    
+    for(int index = 0; index < position; index++)
+    {
+        indexPointer = indexPointer->getNode();
+    }
+    
+    indexPointer->setData(data);
+    indexPointer->setStuffed(true);
+    
+}
 
